@@ -4,4 +4,105 @@
 body {
     margin: 0;
     padding: 0;
+    background: #f1f1f1;
+    font: 16px Arial, sans-serif;;
+}
+.container {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+form {
+    height: 200px;
+    padding: 30px 0;
+    position: relative;
+    /* display: inline-block; */
+}
+input[type="search"] {
+    border: none;
+    font: bold 7em Arial, sans-serif;
+    color: #ec5a62;
+    background: #f1f1f1;
+    width: 100%;
+}
+input[type="search"]::placeholder {
+    color: #ddd;
+} 
+.search-button {
+    width: 133px;
+    height: 133px;
+    background: no-repeat url("../img/magnifier.svg");
+    border: none;
+    position: absolute;
+        top: 30px;
+        right: 0;
+    transition: all .3s ease-in; 
+}
+.search-button:hover {
+    width: 151px;
+    height: 151px;
+    border: none;
+    transition: all .3s ease-in; 
+    position: absolute;
+        top: 21px;
+}
+main {
+    font-size: 0px;
+    /* text-align: center; */
+}
+.list-box {
+    display: inline-block;
+    width: 33.33333%;
+    border: 1px solid green;
+    /* margin-right: 5px; */
+    color: #c2c2c2;
+}
+.list-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.list-box h3 {
+    display: inline-block;
+    vertical-align: 50%;
+    font-size: 16px;    
+}
+.list-box ul {
+    padding: 0;
+}
+ul li {
+    /* display: inline-block; */
+}
+.list-box a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c2c2c2;
+    background: #ebebed;
+    display: block;
+    text-decoration: none;
+    padding: 20px 15px 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: block;
+    width: 90%;
+
+    vertical-align: middle;
+    font-size: 0.85em;
+    display: inline-block;
+}
+.people img {
+    border-radius: 50%;
+}
+.list-box img {
+    margin-right: 20px;
+    display: inline-block;
+}
+.list-box a:hover {
+    background: #dcdcdd;
+    color: #ec5a62;
 }
