@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-body {
+body, h1, h2, h3 {
     margin: 0;
     padding: 0;
     background: #f1f1f1;
@@ -9,9 +9,8 @@ body {
 }
 .container {
     max-width: 1060px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
-    border: 1px solid blueviolet;
 }
 header {
     margin: 0;
@@ -20,6 +19,7 @@ header {
 form {
     height: 200px;
     padding: 30px 0;
+    margin: 20px 0;
     position: relative;
     /* display: inline-block; */
 }
@@ -28,11 +28,16 @@ input[type="search"] {
     font: bold 7em Arial, sans-serif;
     color: #ec5a62;
     background: #f1f1f1;
-    width: 100%;
+    width: 80%;
 }
 input[type="search"]::placeholder {
     color: #ddd;
 } 
+/*Убираем крестик из поля вваода*/
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
 .search-button {
     width: 133px;
     height: 133px;
@@ -51,58 +56,72 @@ input[type="search"]::placeholder {
     position: absolute;
         top: 21px;
 }
+
+
 main {
     font-size: 0px;
-    /* text-align: center; */
 }
 .list-box {
     display: inline-block;
     width: 33.33333%;
-    border: 1px solid green;
-    /* margin-right: 5px; */
+    /* border: 1px solid green; */
     color: #c2c2c2;
+    vertical-align: top;
 }
 .list-box h2 {
-    font-size: 26px;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 20px 0;
 }
-.list-box h3 {
-    display: inline-block;
-    vertical-align: 50%;
-    font-size: 16px;    
-}
+
 .list-box ul {
     padding: 0;
 }
 ul li {
-    /* display: inline-block; */
+    padding: 0;
 }
 .list-box a {
-    font-size: 16px;
-    font-weight: bold;
+    /* font-size: 1rem; */
+    /* font-weight: bold; */
     color: #c2c2c2;
     background: #ebebed;
     display: block;
     text-decoration: none;
-    padding: 20px 15px 20px 20px;
+    padding: 15px 5px 15px 15px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: block;
     width: 90%;
-
-    vertical-align: middle;
-    font-size: 0.85em;
+    /* border: 1px solid yellowgreen; */
+    /* vertical-align: middle; */
+    /* font-size: 0.85em; */
+    /* display: inline-block; */
+}
+.list-box img {
+    margin-right: 10px;
     display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+.list-box h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #a8a7a7;
+    background: #ebebed;
+    width: calc(100% - 50px - 10px);
+    /* border: 1px solid red; */
+    /* font-size: 16px;     */
 }
 .people img {
     border-radius: 50%;
 }
-.list-box img {
-    margin-right: 20px;
-    display: inline-block;
-}
-.list-box a:hover {
+
+.list-box a:hover,
+.list-box a:hover h3 {
     background: #dcdcdd;
     color: #ec5a62;
 }
