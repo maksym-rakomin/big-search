@@ -17,18 +17,17 @@ header {
     padding: 0;
 }
 form {
-    height: 200px;
     padding: 30px 0;
     margin: 20px 0;
     position: relative;
-    /* display: inline-block; */
 }
 input[type="search"] {
     border: none;
     font: bold 7em Arial, sans-serif;
     color: #ec5a62;
     background: #f1f1f1;
-    width: 80%;
+    width: calc(100% - 151px);
+    outline: none; /*Обводка при нажатии на поле ввода*/
 }
 input[type="search"]::placeholder {
     color: #ddd;
@@ -64,8 +63,8 @@ main {
 .list-box {
     display: inline-block;
     width: 33.33333%;
-    /* border: 1px solid green; */
     color: #c2c2c2;
+    margin-top: 40px;
     vertical-align: top;
 }
 .list-box h2 {
@@ -82,8 +81,6 @@ ul li {
     padding: 0;
 }
 .list-box a {
-    /* font-size: 1rem; */
-    /* font-weight: bold; */
     color: #c2c2c2;
     background: #ebebed;
     display: block;
@@ -93,10 +90,6 @@ ul li {
     margin-bottom: 10px;
     display: block;
     width: 90%;
-    /* border: 1px solid yellowgreen; */
-    /* vertical-align: middle; */
-    /* font-size: 0.85em; */
-    /* display: inline-block; */
 }
 .list-box img {
     margin-right: 10px;
@@ -113,8 +106,6 @@ ul li {
     color: #a8a7a7;
     background: #ebebed;
     width: calc(100% - 50px - 10px);
-    /* border: 1px solid red; */
-    /* font-size: 16px;     */
 }
 .people img {
     border-radius: 50%;
@@ -125,3 +116,27 @@ ul li {
     background: #dcdcdd;
     color: #ec5a62;
 }
+@media only screen and (max-width : 670px){
+    .container {
+        width: 90%;
+    }
+    input[type="search"] {
+        font: bold 2em Arial, sans-serif;
+        width: calc(100% - 70px);
+    }
+    .search-button {
+        width: 45px;
+        height: 45px;        
+    }
+    .search-button:hover {
+        width: 55px;
+        height: 55px;
+        top: 25px;
+    }
+    .list-box {
+        display: block;
+        width: 100%;
+    }
+    .list-box a {
+        width: 100%;
+} 
