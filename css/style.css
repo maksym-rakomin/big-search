@@ -60,12 +60,17 @@ input[type="search"]::-webkit-search-cancel-button {
 main {
     font-size: 0px;
 }
+
 .list-box {
     display: inline-block;
-    width: 33.33333%;
+    width: 30%;
     color: #c2c2c2;
     margin-top: 40px;
     vertical-align: top;
+    margin-right: 5%;
+}
+.list-box:last-child {
+    margin-right: 0;
 }
 .list-box h2 {
     font-size: 1.2rem;
@@ -73,12 +78,11 @@ main {
     text-transform: uppercase;
     margin: 20px 0;
 }
-
 .list-box ul {
     padding: 0;
 }
 ul li {
-    padding: 0;
+    padding: 0;    
 }
 .list-box a {
     color: #c2c2c2;
@@ -89,7 +93,7 @@ ul li {
     border-radius: 10px;
     margin-bottom: 10px;
     display: block;
-    width: 90%;
+    width: 100%;
 }
 .list-box img {
     margin-right: 10px;
