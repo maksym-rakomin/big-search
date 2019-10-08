@@ -110,6 +110,8 @@ ul li {
     color: #a8a7a7;
     background: #ebebed;
     width: calc(100% - 50px - 10px);
+    max-height: 47px;
+    overflow: hidden;
 }
 .people img {
     border-radius: 50%;
